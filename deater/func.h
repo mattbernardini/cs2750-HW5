@@ -1,0 +1,1 @@
+int searchForSubstring (char ** stringArray, char * stringToSearchFor);
