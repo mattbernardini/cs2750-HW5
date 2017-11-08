@@ -7,10 +7,10 @@
 int main (int argc, char* argv[]) {
     int totalIntegers = 0, arrayCounter = 0;
     char stringArray [argc][256];
-    for (int i = 0; i < argc; i++) {
+    for (int i = 1; i < argc; i++) {
         // Handle if the argument is a integer
         if (isdigit(argv[i])) {
-            int tempInt = argv[i] - '0';
+            int tempInt = *argv[i] - '0';
             totalIntegers += tempInt;
         } else {
             // We have characters
