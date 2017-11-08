@@ -9,7 +9,7 @@ int main (int argc, char* argv[]) {
     char stringArray [argc][256];
     for (int i = 1; i < argc; i++) {
         // Handle if the argument is a integer
-        if (isdigit(argv[i])) {
+        if (isdigit(*argv[i])) {
             int tempInt = *argv[i] - '0';
             totalIntegers += tempInt;
         } else {
