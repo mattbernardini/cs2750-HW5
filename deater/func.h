@@ -1,1 +1,1 @@
-int* searchForSubstring (char ** stringArray, char * stringToSearchFor, int numStrings);
+void searchForSubstring (char ** stringArray, char * stringToSearchFor, int numStrings);
