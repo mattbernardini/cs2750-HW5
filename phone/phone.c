@@ -3,7 +3,7 @@
 int main (int argc, char* argv[]) {
     int number[10] = { 0 };
     for (int i = 0; argv[1][i] != '\0'; i++) {
-        printf("%s\n", argv[1][i]);
+        printf("%c\n", argv[1][i]);
     }
     return 0;
 }
