@@ -3,7 +3,8 @@
 int main (int argc, char* argv[]) {
     int totalIntegers = 0, arrayCounter = 0;
     // To store the words we get in command line, initialize to null terminator
-    char stringArray [argc][256] = (char*)malloc(argc * 256 * sizeof(char));
+    char stringArray [argc][256];
+    memset(stringArray, '\0', sizeof stringArray);
 
     for (int i = 1; i < argc; i++) {
         // Handle if the argument is a integer
