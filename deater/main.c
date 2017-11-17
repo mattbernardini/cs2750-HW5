@@ -15,7 +15,7 @@ int main (int argc, char* argv[]) {
             // We have characters
             // Copy string into our search array           
             searchForSubstring(arrayCounter, argc, stringArray, argv[i]);
-            memcpy(stringArray[arrayCounter++], argv[i]);
+            memcpy(stringArray[arrayCounter++], argv[i], sizeof (stringArray[i]));
  
         }
     }
