@@ -14,9 +14,8 @@ int main (int argc, char* argv[]) {
         } else {
             // We have characters
             // Copy string into our search array
-            strncpy(stringArray[arrayCounter], argv[i], 256);
+            strncpy(stringArray[arrayCounter++], argv[i], 256);
             searchForSubstring(stringArray, argv[i], arrayCounter);
-            arrayCounter++;
         }
     }
     printf("Total integers: %d\n", totalIntegers);
