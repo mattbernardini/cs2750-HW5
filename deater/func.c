@@ -1,6 +1,6 @@
 #include "func.h"
 // strstr
-void searchForSubstring (char [][] stringArray, char * stringToSearchFor, int numStrings) {
+void searchForSubstring (char [M][N] stringArray, char * stringToSearchFor, int numStrings) {
     for (int i = 0; i < numStrings; i++) {
         if (strstr(stringToSearchFor, stringArray[i]) != NULL) {
             printf("%s is a substring of %s\n", stringToSearchFor, stringArray[i]);
