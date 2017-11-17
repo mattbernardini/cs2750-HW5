@@ -1,5 +1,4 @@
 #include "func.h"
-#include <string.h>
 // strstr
 void searchForSubstring (char ** stringArray, char * stringToSearchFor, int numStrings) {
     for (int i = 0; i < numStrings; i++) {
