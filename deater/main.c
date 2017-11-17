@@ -7,7 +7,7 @@
 int main (int argc, char* argv[]) {
     int totalIntegers = 0, arrayCounter = 0;
     // To store the words we get in command line, initialize to null terminator
-    char stringArray [argc][256] = { '\0' };
+    char stringArray [argc][256];
     for (int i = 1; i < argc; i++) {
         // Handle if the argument is a integer
         if (atoi(argv[i]) != 0) {
