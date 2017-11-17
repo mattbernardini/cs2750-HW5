@@ -15,7 +15,7 @@ int main (int argc, char* argv[]) {
             // We have characters
             // Copy string into our search array           
             searchForSubstring(arrayCounter, argc, stringArray, argv[i]);
-            strncpy(stringArray[arrayCounter++], argv[i], 256);
+            strncpy(*stringArray[arrayCounter++], *argv[i], 256);
  
         }
     }
