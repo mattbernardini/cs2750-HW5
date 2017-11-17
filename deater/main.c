@@ -13,14 +13,10 @@ int main (int argc, char* argv[]) {
             totalIntegers += tempInt;
         } else {
             // We have characters
-            // Copy string into our search array
-            for (int j = 0; j < arrayCounter; j++) {
-                if (strstr(argv[i], stringArray[j]) != NULL) {
-                    printf("%s is a substring of %s\n", stringArray[j], argv[i]);
-                }
-            }
+            // Copy string into our search array           
+            searchForSubstring(arrayCounter, argc, stringArray, argv[i]);
             strncpy(stringArray[arrayCounter++], argv[i], 256);
-            // searchForSubstring(arrayCounter, argc, stringArray, argv[i]);
+ 
         }
     }
     printf("Total integers: %d\n", totalIntegers);
