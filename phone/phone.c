@@ -1,0 +1,9 @@
+#include "phone_fmt.h"
+
+int main (int argc, char* argv[]) {
+    int number[10] = { 0 };
+    for (int i = 0; i < strlen(argv[1]); i++) {
+        printf("%s\n", argv[1][i]);
+    }
+    return 0;
+}
