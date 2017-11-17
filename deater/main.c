@@ -14,6 +14,7 @@ int main (int argc, char* argv[]) {
             totalIntegers += tempInt;
         } else {
             // We have characters
+            printf("%s\n", argv[i]);
         }
     }
     printf("Total integers: %d\n", totalIntegers);
