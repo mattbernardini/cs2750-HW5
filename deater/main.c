@@ -15,7 +15,7 @@ int main (int argc, char* argv[]) {
             // We have characters
             // Copy string into our search array
             for (int j = 0; j < arrayCounter; j++) {
-                if (strstr(stringArray[j], argv[i]) != NULL) {
+                if (strstr(argv[i], stringArray[j]) != NULL) {
                     printf("%s is a substring of %s\n", stringArray[j], argv[i]);
                 }
             }
