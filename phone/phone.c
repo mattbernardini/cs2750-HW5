@@ -5,7 +5,7 @@ int main (int argc, char* argv[]) {
     int counter = 0;
     for (int i = 0; argv[1][i] != '\0'; i++) {
         if (isdigit(argv[1][i]) != 0 && counter < 10) {
-            number[counter++] = atoi(argv[1][i]);
+            number[counter++] = argv[1][i] - '0';
         }
     }
     if (counter == 9) {
