@@ -2,4 +2,4 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-void searchForSubstring (char *[256] stringArray, char * stringToSearchFor, int numStrings);
+void searchForSubstring (char [][] stringArray, char * stringToSearchFor, int numStrings);
