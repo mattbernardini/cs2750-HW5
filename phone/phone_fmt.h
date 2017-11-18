@@ -2,4 +2,4 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-void parsePhoneNumber (char * argv[], int number[]);
+int parsePhoneNumber (char * argv[], int number[]);
