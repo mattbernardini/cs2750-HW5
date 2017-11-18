@@ -8,3 +8,10 @@ int parsePhoneNumber (char * argv[], int number[]) {
     }
     return counter;
 }
+void printPhoneNumber (int counter, int number[]) {
+    if (counter == 9) {
+        printf("(%d%d%d) %d%d%d-%d%d%d%d\n", number[0], number[1], number[2], number[3], number[4], number[5], number[6], number[7], number[8], number[9]);
+    } else {
+        printf("ERROR: Not enough digits on input!\n");
+    }
+}

@@ -1,13 +1,11 @@
 #include "phone_fmt.h"
 
 int main (int argc, char* argv[]) {
+    // Allocate memory for phone number
     int number[9] = { 0 };
+    // Parse phone number
     int counter = parsePhoneNumber(argv, number);
-    if (counter == 9) {
-        printf("(%d%d%d) %d%d%d-%d%d%d%d", number[0], number[1], number[2], number[3], number[4], number[5], number[6], number[7], number[8], number[9]);
-    } else {
-        printf("ERROR: Not enough digits on input!");
-    }
-    
+    // print phone number
+    printPhoneNumber(counter, number);
     return 0;
 }
